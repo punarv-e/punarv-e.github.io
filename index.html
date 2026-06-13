@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punarv-E | Sustainable E-Waste Management</title>
+    <style>
+        :root {
+            --primary-color: #2E7D32;
+            --secondary-color: #1B5E20;
+            --accent-color: #F9A825;
+            --text-dark: #333;
+            --text-light: #fff;
+            --bg-light: #f4f9f4;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .nav-container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .logo span { color: var(--accent-color); }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li { margin-left: 20px; }
+        nav ul li a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover { color: var(--accent-color); }
+        .hero {
+            background: linear-gradient(rgba(27, 94, 32, 0.8), rgba(46, 125, 50, 0.8)), url('https://images.unsplash.com/photo-1550005973-7864ee0558eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            padding: 0 20px;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; }
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--text-dark);
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: #F57F17; }
+        .section { padding: 80px 20px; }
+        .bg-light { background-color: var(--bg-light); }
+        .container { width: 80%; margin: auto; }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--secondary-color);
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-10px); }
+        .card h3 { color: var(--primary-color); margin-bottom: 15px; }
+        footer {
+            background: var(--text-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .contact-info { margin-top: 20px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Punarv<span>-E</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#advantage">The CIT Advantage</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Giving Electronics a Second Life</h1>
+        <p>A cutting-edge E-Waste Collection, Dismantling, and Refurbishing Hub located at the CIT Campus in Tumkur. Helping corporate brands meet their EPR targets while driving the circular economy.</p>
+        <a href="#about" class="btn">Discover Our Vision</a>
+    </section>
+
+    <section id="about" class="section container">
+        <h2 class="section-title">The Punarv-E Mission</h2>
+        <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: auto;">
+            The name "Punarv" translates to renewal and restoration. At Punarv-E, we transform the growing electronic waste crisis into an urban mining opportunity. Fully compliant with the stringent E-Waste (Management) Rules, 2022, our state-of-the-art facility bridges the gap between Bangalore's massive IT waste streams and authorized, formal recycling [1].
+        </p>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Integrated Services</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Corporate ITAD & Sourcing</h3>
+                    <p>Direct B2B collection contracts with tech parks and OEMs in the Bangalore corridor, bypassing informal aggregators to secure high-yield material.</p>
+                </div>
+                <div class="card">
+                    <h3>Certified Data Destruction</h3>
+                    <p>Guaranteed enterprise-grade hardware and software data wiping. We ensure absolute privacy for your corporate assets before recycling.</p>
+                </div>
+                <div class="card">
+                    <h3>Refurbishing & Resale</h3>
+                    <p>Testing and repairing functional electronics to introduce them back into the secondary market, extending their lifecycle and promoting circularity.</p>
+                </div>
+                <div class="card">
+                    <h3>Urban Mining & Extraction</h3>
+                    <p>Mechanical shredding and advanced segregation to safely harvest high-value commodities (Gold, Silver, Copper, Aluminum) from populated PCBs.</p>
+                </div>
+                <div class="card">
+                    <h3>EPR Certificate Trading</h3>
+                    <p>Helping electronics producers meet their legal Extended Producer Responsibility (EPR) targets through the generation and secure trading of compliance certificates [1].</p>
+                </div>
+                <div class="card">
+                    <h3>Zero-Landfill Processing</h3>
+                    <p>Strict KSPCB compliance. Hazardous materials are securely routed to industrial smelters and TSDFs, ensuring zero environmental leakage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantage" class="section container">
+        <h2 class="section-title">The CIT Strategic Advantage</h2>
+        <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: auto; margin-bottom: 40px;">
+            Our facility is strategically integrated with the Channabasaveshwara Institute of Technology (CIT). This partnership gives us unparalleled operational leverage.
+        </p>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Logistical Goldmine</h3>
+                <p>Located right on NH 206, just 80km from Bangalore's tech hubs, allowing for cost-effective reverse logistics without the exorbitant real estate costs of the metro.</p>
+            </div>
+            <div class="card">
+                <h3>Captive Engineering Talent</h3>
+                <p>Access to a steady pipeline of highly trainable engineering students from CIT to staff our diagnostic, refurbishing, and R&D divisions.</p>
+            </div>
+            <div class="card">
+                <h3>R&D Innovation Sandbox</h3>
+                <p>Backed by CIT’s Research Advisory Committee, Punarv-E serves as a live laboratory for advancing sustainable extraction and circular economy technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Punarv-E</h2>
+        <p>Sustainable E-Waste Management & Urban Mining</p>
+        <div class="contact-info">
+            <p><strong>Location:</strong> Channabasaveshwara Institute of Technology Campus</p>
+            <p>N.H. 206, B.H. Road, Gubbi, Tumkur 572 216, Karnataka, India [2]</p>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8rem;">&copy; 2026 Punarv-E. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
