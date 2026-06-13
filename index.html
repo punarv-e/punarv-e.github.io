@@ -68,18 +68,49 @@
         }
         .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
         .hero p { font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; }
+        
+        /* Updated CTA Buttons */
+        .cta-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
         .btn {
             display: inline-block;
             background: var(--accent-color);
             color: var(--text-dark);
-            padding: 10px 25px;
+            padding: 12px 28px;
             text-decoration: none;
             font-size: 1.1rem;
             font-weight: bold;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
         }
-        .btn:hover { background: #F57F17; }
+        .btn:hover { background: #F57F17; transform: translateY(-2px); }
+        .btn-outline {
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--accent-color);
+        }
+        .btn-outline:hover {
+            background: var(--accent-color);
+            color: var(--text-dark);
+        }
+
+        /* Trust Banner */
+        .trust-banner {
+            background: var(--secondary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .trust-banner span {
+            margin: 0 15px;
+        }
+
         .section { padding: 80px 20px; }
         .bg-light { background-color: var(--bg-light); }
         .container { width: 80%; margin: auto; }
@@ -104,6 +135,17 @@
         }
         .card:hover { transform: translateY(-10px); }
         .card h3 { color: var(--primary-color); margin-bottom: 15px; }
+        
+        /* Bottom CTA Section */
+        .bottom-cta {
+            background: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .bottom-cta h2 { margin-bottom: 20px; font-size: 2.2rem; }
+        .bottom-cta p { margin-bottom: 30px; font-size: 1.1rem; }
+
         footer {
             background: var(--text-dark);
             color: var(--text-light);
@@ -130,15 +172,25 @@
     </header>
 
     <section id="home" class="hero">
-        <h1>Giving Electronics a Second Life</h1>
-        <p>A cutting-edge E-Waste Collection, Dismantling, and Refurbishing Hub located at the CIT Campus in Tumkur. Helping corporate brands meet their EPR targets while driving the circular economy.</p>
-        <a href="#about" class="btn">Discover Our Vision</a>
+        <h1>Transforming E-Waste into Urban Resources</h1>
+        <p>A cutting-edge E-Waste Collection, Dismantling, and Refurbishing Hub located in the Tumkur Industrial Corridor. We help corporate brands meet their EPR targets while driving the circular economy[cite: 1].</p>
+        <div class="cta-group">
+            <a href="#contact" class="btn">Discuss EPR Compliance</a>
+            <a href="#contact" class="btn btn-outline">Request Investor Deck</a>
+        </div>
     </section>
+
+    <!-- Trust Banner for Compliance Transparency -->
+    <div class="trust-banner">
+        <span>✔ KSPCB & CPCB Compliant</span> | 
+        <span>✔ Enterprise-Grade Data Destruction</span> | 
+        <span>✔ Certified EPR Partner</span>
+    </div>
 
     <section id="about" class="section container">
         <h2 class="section-title">The Punarv-E Mission</h2>
         <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: auto;">
-            The name "Punarv" translates to renewal and restoration. At Punarv-E, we transform the growing electronic waste crisis into an urban mining opportunity. Fully compliant with the stringent E-Waste (Management) Rules, 2022, our state-of-the-art facility bridges the gap between Bangalore's massive IT waste streams and authorized, formal recycling [1].
+            The name "Punarv" translates to renewal and restoration. At Punarv-E Resource Recovery Pvt. Ltd., we transform the growing electronic waste crisis into an urban mining opportunity. Fully compliant with the stringent E-Waste (Management) Rules, 2022, our state-of-the-art facility bridges the gap between Bangalore's massive IT waste streams and authorized, formal recycling[cite: 1].
         </p>
     </section>
 
@@ -148,61 +200,68 @@
             <div class="grid-3">
                 <div class="card">
                     <h3>Corporate ITAD & Sourcing</h3>
-                    <p>Direct B2B collection contracts with tech parks and OEMs in the Bangalore corridor, bypassing informal aggregators to secure high-yield material.</p>
+                    <p>Direct B2B collection contracts with tech parks and OEMs in the Bangalore corridor, bypassing informal aggregators to secure high-yield material[cite: 1].</p>
                 </div>
                 <div class="card">
                     <h3>Certified Data Destruction</h3>
-                    <p>Guaranteed enterprise-grade hardware and software data wiping. We ensure absolute privacy for your corporate assets before recycling.</p>
+                    <p>Guaranteed enterprise-grade hardware and software data wiping. We ensure absolute privacy for your corporate assets before recycling[cite: 1].</p>
                 </div>
                 <div class="card">
                     <h3>Refurbishing & Resale</h3>
-                    <p>Testing and repairing functional electronics to introduce them back into the secondary market, extending their lifecycle and promoting circularity.</p>
+                    <p>Testing and repairing functional electronics to introduce them back into the secondary market, extending their lifecycle and promoting circularity[cite: 1].</p>
                 </div>
                 <div class="card">
                     <h3>Urban Mining & Extraction</h3>
-                    <p>Mechanical shredding and advanced segregation to safely harvest high-value commodities (Gold, Silver, Copper, Aluminum) from populated PCBs.</p>
+                    <p>Mechanical shredding and advanced segregation to safely harvest high-value commodities (Gold, Silver, Copper, Aluminum) from populated PCBs[cite: 1].</p>
                 </div>
                 <div class="card">
                     <h3>EPR Certificate Trading</h3>
-                    <p>Helping electronics producers meet their legal Extended Producer Responsibility (EPR) targets through the generation and secure trading of compliance certificates [1].</p>
+                    <p>Helping electronics producers meet their legal Extended Producer Responsibility (EPR) targets through the generation and secure trading of compliance certificates[cite: 1].</p>
                 </div>
                 <div class="card">
                     <h3>Zero-Landfill Processing</h3>
-                    <p>Strict KSPCB compliance. Hazardous materials are securely routed to industrial smelters and TSDFs, ensuring zero environmental leakage.</p>
+                    <p>Strict KSPCB compliance. Hazardous materials are securely routed to industrial smelters and TSDFs, ensuring zero environmental leakage[cite: 1].</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="advantage" class="section container">
-        <h2 class="section-title">The CIT Strategic Advantage</h2>
+        <h2 class="section-title">The CIT Academic Advantage</h2>
         <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: auto; margin-bottom: 40px;">
-            Our facility is strategically integrated with the Channabasaveshwara Institute of Technology (CIT). This partnership gives us unparalleled operational leverage.
+            Our strategic academic partnership with the Channabasaveshwara Institute of Technology (CIT) gives us an unparalleled operational moat in research, development, and human capital.
         </p>
         <div class="grid-3">
             <div class="card">
-                <h3>Logistical Goldmine</h3>
-                <p>Located right on NH 206, just 80km from Bangalore's tech hubs, allowing for cost-effective reverse logistics without the exorbitant real estate costs of the metro.</p>
-            </div>
-            <div class="card">
                 <h3>Captive Engineering Talent</h3>
-                <p>Access to a steady pipeline of highly trainable engineering students from CIT to staff our diagnostic, refurbishing, and R&D divisions.</p>
+                <p>Access to a steady pipeline of highly trainable engineering students from CIT to staff our diagnostic, refurbishing, and testing divisions[cite: 1].</p>
             </div>
             <div class="card">
                 <h3>R&D Innovation Sandbox</h3>
-                <p>Backed by CIT’s Research Advisory Committee, Punarv-E serves as a live laboratory for advancing sustainable extraction and circular economy technologies.</p>
+                <p>Backed by CIT’s Research Advisory Committee, Punarv-E serves as a live academic laboratory for advancing sustainable extraction and circular economy technologies[cite: 1].</p>
+            </div>
+            <div class="card">
+                <h3>Cross-Disciplinary Expertise</h3>
+                <p>Continuous collaboration with specialized faculties—ranging from Mechanical and Electronics to Computer Science—ensures our processing methodologies are consistently optimized.</p>
             </div>
         </div>
     </section>
 
+    <!-- Bottom Call To Action for B2B & Investors -->
+    <section id="contact" class="bottom-cta">
+        <h2>Ready to Drive the Circular Economy?</h2>
+        <p>Whether you are an OEM looking for EPR compliance, a corporate IT manager needing secure asset disposal, or an investor looking for high-yield green tech.</p>
+        <a href="mailto:contact@punarv-e.co" class="btn btn-outline" style="border-color: #fff;">Contact Our Team</a>
+    </section>
+
     <footer>
-        <h2>Punarv-E</h2>
-        <p>Sustainable E-Waste Management & Urban Mining</p>
+        <h2>Punarv-E Resource Recovery Pvt. Ltd.</h2>
+        <p>Sustainable E-Waste Management & Urban Mining[cite: 1]</p>
         <div class="contact-info">
-            <p><strong>Location:</strong> Channabasaveshwara Institute of Technology Campus</p>
-            <p>N.H. 206, B.H. Road, Gubbi, Tumkur 572 216, Karnataka, India [2]</p>
+            <p><strong>Corporate & Operations:</strong></p>
+            <p>Tumkur Industrial Corridor, Karnataka, India</p>
         </div>
-        <p style="margin-top: 30px; font-size: 0.8rem;">&copy; 2026 Punarv-E. All rights reserved.</p>
+        <p style="margin-top: 30px; font-size: 0.8rem;">&copy; 2026 Punarv-E. All rights reserved[cite: 1].</p>
     </footer>
 
     <script>
